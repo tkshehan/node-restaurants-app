@@ -24,7 +24,7 @@ function seedRestaurantData() {
   console.info('seeding restaurant data');
   const seedData = [];
 
-  for (let i=1; i<=10; i++) {
+  for (let i = 1; i <= 10; i++) {
     seedData.push(generateRestaurantData());
   }
   // this will return a promise
@@ -143,11 +143,11 @@ describe('Restaurants API resource', function() {
         .then(function(res) {
           expect(res).to.have.status(200);
           expect(res).to.be.json;
-          expect(res.body.restaurants).to.be.a('array');
+          expect(res.body.restaurants).to.be.an('array');
           expect(res.body.restaurants).to.have.lengthOf.at.least(1);
 
           res.body.restaurants.forEach(function(restaurant) {
-            expect(restaurant).to.be.a('object');
+            expect(restaurant).to.be.an('object');
             expect(restaurant).to.include.keys(
               'id', 'name', 'cuisine', 'borough', 'grade', 'address');
           });
