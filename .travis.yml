@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: G+82aNGE2CyMqFfjlvzLKFyqAtA3l806txG2TRAtGyNk4yfJPMzddACgT3H6oSNOKw3sI6KfAc3x1xl1pilChKwPISF5zgRY+qITUgLhxXr8xhZy2r/6UciKQXBASntL2a5sDHKrpa99urfO+DG+LAwMmf1iu1WoJPGKYCmbYEEB0UUG+RtCfAxU8sEFLejyRsrO+EZ0zCL3G5S7el+f8irbGNBSM+YaKFrqrPzqQ+3FrUfeKi5yvX8By/euvgYCpfdgHQMfVBSjKYQqhs4zUX3G0fbNDyw6LJBPX0CWs6rbwXiltNkNXg0R5XB9Ge5dcziDNIMtw+D7I7qMCsWd98UH4uST0JuYRIJd4fCHo3Jm3/sJbdnOkqucOUYcHtrTzL79IBEEaD+dhoX1sByApPFsCRGW5HaSs2pt17CIw9coE/LVTM3k9A8xOFi2PxgVLfDuls5TFgaoJpZmGjRi0w96LoB3fTaV5+vsH/mMSju0R7J6SCdOegmFWBaHvrykAzd2wsib3nTa4L8j5iDRc/1qtcZpsP6xe/TgEGJyJXUP8cSnRC2M10oBGURa6k2GuDBMRIH8RTxyS2N8JGAPIUP+e7WIbcZFVbWEYwuyNj9SU4tpznHHecMkDbVyeF7rXJWEg0MqLoMP3a2/jsKRAQ+ACVYzkz/k4ZqJyEgDL4g=
+  app: serene-depths-87274
+  on:
+    repo: tkshehan/node-restaurants-app
